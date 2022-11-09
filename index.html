@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/icone2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <img class="logo" src="./src/assets/logo2.png" alt="churrascômetro">
+
+            <input type="number" name="adults" id="adults" placeholder="Quantos adultos?" required>
+            <input type="number" name="children" id="children" placeholder="Quantas crianças?" required>
+            <input type="number" name="hours" id="hours" placeholder="Duração (em horas)" required>
+
+            <div class="buttons">
+                <button  onClick="location.reload()" class="button">Limpar</button>
+                <button  onclick="calculate()" class="button">Calcular</button>                
+            </div>  
+
+            <div id="result"></div>
+
+            <span class="name"></span>
+
+        </div>
+    </div>
+<script src="./src/js/script.js"></script>
+</body>
+</html>
